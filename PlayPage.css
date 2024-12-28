@@ -1,0 +1,359 @@
+/* PLAYPAGE.HTML  CSS CHANGES IN GAMESYMBOLS BOX. */
+
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.roboto-medium {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homePage_Container {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background: #87c56c;
+}
+
+.homeScoreBoard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  width: 57vmax;
+  padding: 0.8rem 1rem;
+  border: 2px solid rgb(248, 244, 244);
+  border-radius: 1rem;
+  justify-self: center;
+  transform: translateY(3rem);
+}
+
+.GameName p {
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.Homescores {
+  display: flex;
+  text-align: center;
+  gap: 2rem;
+}
+
+.homeScore_Box {
+  padding: 0.5rem 1.5rem;
+  height: 17vh;
+  border-radius: 1rem;
+  background-color: #fff;
+  align-self: flex-start;
+}
+
+.homeScore_Box p {
+  color: gray;
+  width: 7vw;
+  font-size: 1rem;
+}
+
+.homeScore_Box h5 {
+  font-size: 3rem;
+}
+
+#yourbox {
+  padding: 0.5rem 1.8rem;
+}
+
+#yourbox p {
+  width: 5vw;
+}
+
+.Rules_OuterBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  justify-self: flex-end;
+  align-items: flex-end;
+}
+
+.GameRules_Box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: flex-end;
+  position: absolute;
+  bottom: 5.5rem;
+  right: 4rem;
+  padding: 0rem 1.9rem;
+  align-items: center;
+  background: #364f33;
+  height: 53vh;
+  width: 22vw;
+  border-radius: 1rem;
+  border: 8px solid rgb(254, 251, 251);
+}
+
+.GameRules_Box #crossSymbol {
+  display: flex;
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-right: -3.2rem;
+  color: red;
+  transform: translateY(-2.6rem);
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 21rem;
+  z-index: 99999999;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.GameRules_Box h5 {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transform: translateY(-1.9rem);
+}
+
+.GameRules_Box ul {
+  transform: translateY(-0.5rem);
+}
+
+.GameRules_Box li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #fffffe;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.GameRules_Box li::before {
+  content: "\25A0";
+  color: rgb(252, 248, 3);
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.hide {
+  opacity: 0;
+  z-index: 0;
+}
+
+.Play_Symbols {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(9rem);
+  height: 48vh;
+}
+
+.PlayGame_Symbols {
+  display: flex;
+  justify-content: space-around;
+  justify-self: center;
+  align-items: center;
+  height: 45vh;
+  width: 55vw;
+ 
+
+}
+
+ .PlayOUTER_LAYER {
+  height: auto;
+  width: 22vw;
+  padding: 0.2rem 1.5rem 1.2rem;
+  border-radius: 12rem;
+  background: #56b849ac;
+}
+
+ .PlayOUTER_LAYER > p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  transform: translateY(0.8rem);
+}
+ .PLAYINNER_LAYER {
+  border: 1.1rem solid #25bb4396;
+  padding: 2.5rem;
+  border-radius: 8.2rem;
+  background: #0b9e28fd;
+}
+
+ .PLAYLAST_LAYER {
+  border: 0.8rem solid rgb(200, 24, 171);
+  border-radius: 4.7rem;
+  background: #fff;
+}
+
+.PLAYLAST_LAYER,
+#fistPlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.Win_Text {
+  height: 20vh;
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.Win_Text h3 {
+  margin-top: 1rem;
+  color: white;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+}
+
+.Win_Text h4 {
+  color: #fff;
+  letter-spacing: 0.3rem;
+}
+
+.PlayAgain {
+  transform: translateY(1rem);
+  padding: 0.5rem 1.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+  color: rgba(128, 128, 128, 0.805);
+}
+
+#scissorPlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  rotate: 90deg !important;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.PCOUTER_LAYER {
+  height: auto;
+  width: 22vw;
+  padding: 0.2rem 1.5rem 1.2rem;
+  border-radius: 12rem;
+  background: #56b849ac;
+}
+
+.PCOUTER_LAYER > p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  transform: translateY(0.8rem);
+}
+
+.PCINNER_LAYER {
+    border: 1.1rem solid #25bb4396;
+    padding: 2.5rem;
+    border-radius: 8.2rem;background: #0b9e28fd;
+
+}
+
+.PCLAST_LAYER{
+    border: 0.8rem solid rgb(200, 24, 171);
+    border-radius: 4.7rem;
+    background: #fff;
+}
+
+.PCLAST_LAYER,
+#fistPlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+.PlayPage_Buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform: translateY(10.5rem);
+  width: 20vw;
+}
+
+.PlayRules_btn {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  /* margin-left: -28rem; */
+  /* transform: translateY(9.5rem); */
+  padding: 0.2rem 1.2rem;
+  letter-spacing: 0.2rem;
+  background: transparent;
+  border: 0.1rem solid white;
+  border-radius: 0.5rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.PlayNext_btn {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 0.2rem 1.2rem;
+  letter-spacing: 0.2rem;
+  background: transparent;
+  border: 0.1rem solid white;
+  border-radius: 0.5rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .PlayGame_Symbols{
+        width: 65vw;
+    }
+   .Win_Text{
+    width: 22vw;
+   }
+
+   .PlayPage_Buttons{
+    transform: translateY(8rem);
+   }
+}
+
+@media screen and (max-width:1024px) {
+    
+
+
+.PlayOUTER_LAYER{
+    width: 35vw;
+}
+
+.PCOUTER_LAYER{
+    width: 35vw;
+}
+
+.PlayPage_Buttons{
+    position: relative;
+    right: 2rem;
+    gap: 0.5rem;
+}
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPR - Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="PlayPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="homePage_Container">
+      <head>
+        <section class="homeScoreBoard">
+          <div class="GameName roboto-medium">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSORS</p>
+          </div>
+          <div class="Homescores">
+            <div class="homeScore_Box roboto-medium">
+              <p id="compScore">Computer Score</p>
+              <h5>0</h5>
+            </div>
+
+            <div class="homeScore_Box roboto-medium" id="yourbox">
+              <p id="yourScore">Your Score</p>
+              <h5>0</h5>
+            </div>
+          </div>
+        </section>
+      </head>
+
+      <main>
+        <section class="Play_Symbols">
+          <div class="PlayGame_Symbols">
+            <div class="PlayOUTER_LAYER roboto-medium">
+              <p>You Picked</p>
+              <div class="PLAYINNER_LAYER">
+                <div class="PLAYLAST_LAYER">
+                  <i class="fa-solid fa-hand-back-fist" id="fistPlay"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="Win_Text roboto-medium ">
+              <h3>YOU WIN</h3>
+              <h4>AGAINST PC</h4>
+              <button class="PlayAgain">PLAY AGAIN</button>
+            </div>
+
+            <div class="PCOUTER_LAYER roboto-medium">
+              <p>PC Picked</p>
+                <div class="PCINNER_LAYER">
+                    <div class="PCLAST_LAYER">
+              <i class="fa-solid fa-hand-scissors" id="scissorPlay"></i>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <section class="Rules">
+          <div class="Rules_OuterBox">
+            <div class="GameRules_Box roboto-medium hide ">
+              <i class="fa-solid fa-circle-xmark" id="crossSymbol"></i>
+              <h5>Game Rules</h5>
+
+              <ul>
+                <li>
+                  Rock beats scissors, scissors beat paper, and paper beats
+                  rock.
+                </li>
+                <li>
+                  Agree ahead of time whether you'll count off "rock, paper,
+                  scissors, shoot" or just "rock, paper, scissors."
+                </li>
+                <li>
+                  Use rock, paper, scissors to settle minor decisions or simply
+                  play to pass the time.
+                </li>
+                <li>
+                  If both players lay down the same hand, each player lays down
+                  another hand.
+                </li>
+              </ul>
+            </div>
+            <div class="PlayPage_Buttons">
+              <button class="PlayRules_btn roboto-medium">RULES</button>
+              <button class="PlayNext_btn roboto-medium">NEXT</button>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+
+    <script src="PlayPage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPR - Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="homePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  </head>
+  <body>
+    <div class="homePage_Container">
+      <head>
+        <section class="homeScoreBoard">
+          <div class="GameName roboto-medium">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSORS</p>
+          </div>
+          <div class="Homescores">
+            <div class="homeScore_Box roboto-medium">
+              <p>Computer Score</p>
+              <h5>0</h5>
+            </div>
+
+            <div class="homeScore_Box roboto-medium" id="yourbox">
+              <p id="yourScore">Your Score</p>
+              <h5>0</h5>
+            </div>
+          </div>
+        </section>
+      </head>
+
+      <main>
+        <section class="Game_Symbols">
+          <img src="Images/triangle.png" alt="">
+          <div class="groupGame_Symbols">
+            <div class="Symbol_Box">
+              <i class="fa-solid fa-hand-back-fist" id="fistSymbol"></i>
+            </div>
+
+            <div class="Symbol_Box">
+              <i class="fa-solid fa-hand-scissors" id="scissorSymbol"></i>
+            </div>
+          </div>
+
+          <div class="Symbol_Box" id="handSymbol">
+            <i class="fa-solid fa-hand"></i>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <section class="Rules">
+            <div class="Rules_OuterBox">
+                <div class="GameRules_Box roboto-medium hide">
+                  <i class="fa-solid fa-circle-xmark" id="crossSymbol"></i>
+                    <h5>Game Rules</h5>
+
+                    <ul>
+                        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                        <li>Agree ahead of time whether  you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissors."</li>
+                        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+                        <li>If both players lay down the same hand, each player lays down another hand.</li>
+                    </ul>
+
+                  </div>
+                  <button class="rulesbtn roboto-medium">RULES</button>
+                </div>
+                
+              </section>
+            </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
